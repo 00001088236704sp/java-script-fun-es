@@ -378,8 +378,23 @@
   4. Usar 'if/else' dentro do loop para dar dicas ("Muito alto", "Muito baixo").
   5. Quando o loop terminar, imprimir uma mensagem de sucesso.
 */
- let numeroSecreto = 7
-  +prompt
+//const numeroSecreto = 5;
+//var palpite = +prompt("digite seu palpite!");
+
+// do {
+//   if (palpite < numeroSecreto) {
+//     alert("numero muito baixo")
+//   }
+//   else if (palpite > numeroSecreto) {
+//     alert("numero muito alto")
+//   }
+
+//   palpite = +prompt('voce errou, digite um novo palpite!');
+
+//   if (palpite == numeroSecreto) {
+//     alert('voce acertou! dougras!')
+//   }
+// } while (palpite != numeroSecreto);
 
 
 
@@ -391,3 +406,10 @@
   2. Dentro do loop, calcular o produto de 'numeroTabuada' pelo índice atual do loop (i).
   3. Imprimir o resultado no formato: "5 x 3 = 15".
 */
+
+// const numeroTabuada = 5;
+
+// for (let indice = 0 ; indice <= 10 ; indice++) {
+//   console.log(numeroTabuada + ' X ' + indice + ' = ' + (indice * numeroTabuada))
+// }
+
