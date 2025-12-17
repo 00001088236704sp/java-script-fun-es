@@ -413,3 +413,123 @@
 //   console.log(numeroTabuada + ' X ' + indice + ' = ' + (indice * numeroTabuada))
 // }
 
+// const numeroTabuada = 5;
+
+// for (let indice = 0 ; indice <= 10 ; indice++) {
+//   console.log(numeroTabuada + ' X ' + indice + ' = ' + (indice * numeroTabuada))
+// }
+
+
+// //lista com nomes
+// const listaDeNomes = ['traviscott', 'virginia', 'anacastela', 'neymaru', 'viniJr'];
+// //chamo a POSIÇÃO 2 da lista (lista inicia em 0)
+// console.log(listaDeNomes[0])
+
+// const frutas = ['maçã', 'maracujá', 'uva', 'pessego', 'morango', 'caja', 'banana'];
+// console.log(frutas)
+// tamanho da lista
+//console.log('tamanho da lista ', frutas.length)
+
+//remover o ultimo item da lista
+// frutas.pop();
+// console.log(frutas)
+
+//adicionar item na lista
+//frutas.push('tamarindo')
+// var contador = 0;
+
+// while(contador < frutas.length) {
+//   console.log(frutas[contador])
+//   contador++;
+// }
+
+//criação de funções
+//esta e a forma inicial de criar função
+//NÃO É A MELHOR PRÁTICA PARA FRONT-END!
+// function nomeDaFuncao() {
+//   console.log("a minha funcao em function!")
+// }
+
+//após criar uma função, ela não é executada automáticamente
+//para executá-la precisa chamá-la, desta forma ela executara:
+//o bloco de código da função.
+//nomeDafuncao();
+
+//arrow function, é a MELHOR PRÁTICA para criar funções em front-end
+// const nomeDafuncComConst = () => {
+//   console.log("minha func com const!")
+// }
+
+//após criar uma função, ela não é executada automáticamente
+//para executá-la precisa chamá-la, desta forma ela executara:
+//o bloco de código da função.
+//nomeDafuncComConst();
+
+
+// const somaDeDoisNumeros = (primeiroNumero, segundoNumero) => {
+//   console.log(primeiroNumero + segundoNumero);
+// }
+
+// somaDeDoisNumeros(8, 2);
+// somaDeDoisNumeros(30, 12);
+// somaDeDoisNumeros(1325, 3450);
+
+
+
+
+// --- Exercício 1: Módulo de Cálculo Geométrico ---
+/**
+ * ENUNCIADO: Crie uma função chamada calcularAreaPerimetro que aceite
+ * TRÊS PARÂMETROS: tipo (string), valor1 (number) e valor2 (number).
+ *
+ * 1. Se o tipo for "retangulo", a função deve retornar um OBJETO contendo
+ * a área (valor1 * valor2) e o perímetro (2 * (valor1 + valor2)).
+ * 2. Utilize JSDoc para documentar a função, seus parâmetros e o retorno.
+ *
+ * Exemplo de Retorno: { area: 32, perimetro: 24 }
+ */
+// function calcularAreaPerimetro(tipo, valor1, valor2) { ... }
+
+
+// --- Exercício 2: Validação de Credenciais (Booleano) ---
+/**
+ * ENUNCIADO: Implemente uma função chamada validarLogin que aceite
+ * DOIS PARÂMETROS: usuario (string) e senha (string).
+ *
+ * 1. As credenciais válidas são: usuario = "admin" E senha = "12345".
+ * 2. A função deve retornar um valor BOOLEANO (true ou false).
+ * 3. A comparação de usuário deve ser case-insensitive (não diferenciar maiúsculas/minúsculas).
+ *
+ * Exemplo de uso: validarLogin("ADMIN", "12345") deve retornar true.
+ */
+// const validarLogin = (usuario, senha) => { ... }
+
+
+// --- Exercício 3: Mapeamento de Status de Estoque (Valor Padrão) ---
+/**
+ * ENUNCIADO: Crie uma função chamada verificarEstoque que receba
+ * DOIS PARÂMETROS: quantidade (number) e limiteBaixo (number).
+ *
+ * 1. A função deve retornar uma STRING com o status:
+ * - "Estoque Suficiente" (se quantidade > limiteBaixo)
+ * - "Atenção: Estoque Baixo" (se quantidade <= limiteBaixo)
+ * 2. Implemente um VALOR PADRÃO para limiteBaixo, definindo-o como 10.
+ *
+ * Exemplo de uso: verificarEstoque(8) deve usar o limite padrão e retornar "Atenção: Estoque Baixo".
+ */
+// const verificarEstoque = (quantidade, limiteBaixo = 10) => { ... }
+
+
+// --- Exercício 4: Processamento de Lista de Dados (Array) ---
+/**
+ * ENUNCIADO: Desenvolva uma função chamada processarListaPrecos que receba
+ * UM PARÂMETRO: um Array de números (precos).
+ *
+ * 1. A função deve calcular e retornar a MÉDIA ARITMÉTICA de todos os elementos
+ * contidos no array.
+ * 2. Se o array estiver vazio, a função deve retornar 0.
+ *
+ * Fórmula: Média = Soma dos Preços / Total de Itens
+ * Exemplo de uso: processarListaPrecos([10, 20, 30]) deve retornar 20.
+ */
+// const processarListaPrecos = (precos) => { ... }
