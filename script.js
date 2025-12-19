@@ -182,12 +182,12 @@
 //ESTRUTURA CONDICIONAL - PT.5 (if else if)
 //o else if pode ser colocado diversas vezes, mas o else apenas uma, pois ele
 //e a negação do IF que está sendo validado, o else só pode se repetir se
-//ele estivar em if-else aninhado. 
+//ele estivar em if-else aninhado.
 
-// if (2 === 2 && 2 === '2') { 
+// if (2 === 2 && 2 === '2') {
 //     console.log('entrei no if do E!')
 // }
-// else if(5 === '5') { 
+// else if(5 === '5') {
 //     console.log('entrei no else if!')
 // }
 // else {
@@ -197,7 +197,7 @@
 // if (2 === 2 || 2 === '2') {
 //     console.log('entrei no if do OU!')
 // }
-// else if(3 != 4) { 
+// else if(3 != 4) {
 //     console.log('entrei no else!')
 // }
 
@@ -226,7 +226,7 @@
 // }
 
 //considere os valores entre 1 e 5 para seu switch;
-//caso o usuario digite algum desses valores(1 até 5), o sistema 
+//caso o usuario digite algum desses valores(1 até 5), o sistema
 //deve mostrar a mesma quantidade de vezes a palavra "dougras"
 //se não, escrever "vacilou dougras"
 
@@ -254,7 +254,7 @@
 // }
 
 
-//LOOP DE REPETIÇÃO - PT.6 (for)
+//LOOP DE REPETIÇÃO - PT.7 (for)
 //é um loop com final determinado.
 
 // var. controle ; regra parada ; regra para cada loop
@@ -294,30 +294,30 @@
 // }
 
 
-//LOOP DE REPETIÇÃO - PT.6 (while)
+//LOOP DE REPETIÇÃO - PT.8 (while)
 //loop não tem um fim determinado.
 
 
 // var contador = 0;
 
-// enquanto
+// // enquanto
 // while (contador != 0) {
-    // console.log('ola while');
+//   console.log('ola while');
 // }
 
 
-//LOOP DE REPETIÇÃO - PT.7 (do while)
+//LOOP DE REPETIÇÃO - PT.9 (do while)
 //loop não tem um fim determinado.
 //executa ao menos 1 vez antes de rodar a regra.
 //faça-enquanto
 // do {
-    // console.log('ola do do while!')
+//   console.log('ola do do while!')
 // } while (contador != 0)
 
 
 
 
-//declaração de prompt
+// //declaração de prompt
 // const umTexto = prompt("digite aqui seu texto!");
 // const umNumero = +prompt("digite aqui seu numero!");
 
@@ -332,23 +332,23 @@
   4. Para números Positivos, verificar se são pares ou ímpares.
   5. Imprimir a classificação completa no console.
 */
-// const umNumero = +prompt("digite aqui seu numero!");
-//  if(umNumero >= 0){
-// console.log("positivo")
-//  }
-//  if(umNumero <= 0){
-// console.log("negativo")
-//  }
-//  if(umNumero==0){
-// console.log("igual a zero")
-//  }
-  // if(umNumero %2 == 0){
-// console.log("este numero é par")
-//  }
 
-//  if(umNumero %2==1){
-// console.log("esse numero é impar")
-//  }
+// const meuNumero = +prompt('digite seu numero!')
+// if (meuNumero > 0) {
+//   console.log("o numero eh positivo!")
+//   if (meuNumero % 2 == 0) {
+//     console.log('o numero eh par!')
+//   } else {
+//     console.log('o numero eh impar!')
+//   }
+// }
+// if (meuNumero < 0) {
+//   console.log("o numero eh negativo!")
+// }
+// if (meuNumero == 0) {
+//   console.log("o numero eh 0!")
+// }
+
 
 /*
   EXERCÍCIO 2: CONTADOR REGRESSIVO SIMPLES (WHILE)
@@ -359,13 +359,15 @@
   3. Diminuir o valor de 'contador' em 1 a cada volta.
   4. Adicionar uma mensagem especial ("FOGO!") quando o contador chegar a 0.
 */
-// var numerico =10;
-// while (numerico >=0 ){
-// numerico--;
-// console.log(numerico,"FOGO'");
+// var contador = 10;
 
-// }
-
+// while(contador >= 0){
+//   console.log(contador);
+//   contador--;
+//   if(contador == 0) {
+//     console.log('FOGO!')
+//   }
+// };
 
 /*
   EXERCÍCIO 3: JOGO DE ADIVINHAÇÃO (DO...WHILE)
@@ -373,7 +375,7 @@
   O código deve:
   1. Definir o 'numeroSecreto' (ex: 7) e um 'palpite' (ex: 0).
   2. Usar um loop 'do...while' que continue enquanto 'palpite' for diferente de 'numeroSecreto'.
-  3. Dentro do loop, simular um novo palpite. (Para o exercício, o aluno pode alterar manualmente 
+  3. Dentro do loop, simular um novo palpite. (Para o exercício, o aluno pode alterar manualmente
      o valor de 'palpite' em cada teste, ou usar 'prompt' se for o caso).
   4. Usar 'if/else' dentro do loop para dar dicas ("Muito alto", "Muito baixo").
   5. Quando o loop terminar, imprimir uma mensagem de sucesso.
@@ -413,11 +415,16 @@
 //   console.log(numeroTabuada + ' X ' + indice + ' = ' + (indice * numeroTabuada))
 // }
 
-// const numeroTabuada = 5;
+// //lista de numeros (vetor, array)
+// const minhaLista = [1, 2, 3, 4, 5, 6];
 
-// for (let indice = 0 ; indice <= 10 ; indice++) {
-//   console.log(numeroTabuada + ' X ' + indice + ' = ' + (indice * numeroTabuada))
-// }
+// //pegando a posição 5 da lista.
+// console.log(minhaLista[5])
+
+// //somando valores com lista
+// console.log(minhaLista[0], minhaLista[5])
+
+
 
 
 // //lista com nomes
@@ -465,6 +472,7 @@
 //o bloco de código da função.
 //nomeDafuncComConst();
 
+//LOOP DE REPETIÇÃO - PT.10 (funções)
 
 // const somaDeDoisNumeros = (primeiroNumero, segundoNumero) => {
 //   console.log(primeiroNumero + segundoNumero);
@@ -475,8 +483,6 @@
 // somaDeDoisNumeros(1325, 3450);
 
 
-
-
 // --- Exercício 1: Módulo de Cálculo Geométrico ---
 /**
  * ENUNCIADO: Crie uma função chamada calcularAreaPerimetro que aceite
@@ -484,11 +490,24 @@
  *
  * 1. Se o tipo for "retangulo", a função deve retornar um OBJETO contendo
  * a área (valor1 * valor2) e o perímetro (2 * (valor1 + valor2)).
- * 2. Utilize JSDoc para documentar a função, seus parâmetros e o retorno.
  *
  * Exemplo de Retorno: { area: 32, perimetro: 24 }
  */
-// function calcularAreaPerimetro(tipo, valor1, valor2) { ... }
+
+// const calcularAreaPerimetro = (tipo, valor1, valor2) => {
+//   if (tipo == 'retangulo') {
+//     console.log('área: ' + (valor1 * valor2) + ' Perímetro: ' + (2 * (valor1 + valor2)))
+//   } else {
+//     console.log('nao eh um retangulo!')
+//   }
+// }
+
+// calcularAreaPerimetro('retangulo', 3, 5);
+
+// calcularAreaPerimetro('triangulo', 7, 8);
+
+// calcularAreaPerimetro('retangulo', 0, 0);
+
 
 
 // --- Exercício 2: Validação de Credenciais (Booleano) ---
@@ -502,7 +521,23 @@
  *
  * Exemplo de uso: validarLogin("ADMIN", "12345") deve retornar true.
  */
-// const validarLogin = (usuario, senha) => { ... }
+
+// const validarLogin = (usuario, senha) => {
+//   const usuarioAceito = 'admIn';
+//   const senhaAceita = '12345';
+
+//   if (usuario.toLowerCase() == usuarioAceito.toLocaleLowerCase() && senha == senhaAceita) {
+//     console.log('login aceito');
+//   }
+//   else {
+//     console.log('usuario OU senha errado');
+//   }
+// }
+
+// validarLogin('AdMiN', '12345');
+
+// validarLogin('AdMiN', '12345')
+
 
 
 // --- Exercício 3: Mapeamento de Status de Estoque (Valor Padrão) ---
@@ -517,8 +552,21 @@
  *
  * Exemplo de uso: verificarEstoque(8) deve usar o limite padrão e retornar "Atenção: Estoque Baixo".
  */
-// const verificarEstoque = (quantidade, limiteBaixo = 10) => { ... }
 
+// const verificarEstoque = (quantidade, limiteBaixo) => {
+
+//   if (quantidade > limiteBaixo) {
+//     console.log('estoque suficiente');
+//   }
+//   else {
+//     console.log("Atenção: Estoque Baixo");
+//   }
+
+// }
+
+
+//LOOP DE REPETIÇÃO - PT.11 (funções com listas)
+// verificarEstoque(30, 30);
 
 // --- Exercício 4: Processamento de Lista de Dados (Array) ---
 /**
@@ -532,4 +580,110 @@
  * Fórmula: Média = Soma dos Preços / Total de Itens
  * Exemplo de uso: processarListaPrecos([10, 20, 30]) deve retornar 20.
  */
-// const processarListaPrecos = (precos) => { ... }
+
+// const processarListaPrecos = (precos) => {
+//   let somaDosPrecos = 0;
+//   for (let contador = 0; contador < precos.length; contador++) {
+//     somaDosPrecos = somaDosPrecos + precos[contador];
+//   }
+
+//   console.log(somaDosPrecos / precos.length)
+// }
+
+// processarListaPrecos([1, 2, 3, 4, 5]);
+
+
+//LOOP DE REPETIÇÃO - PT.12 (matrizes)
+
+// const listaSimples = [1, 2, 3, 4]; //vetor
+
+// for(let contador = 0; contador < listaSimples.length ;contador++) {
+//   console.log(listaSimples[contador]);
+// }
+
+// //matriz
+// const listaDeListas = [
+//  [1, 2, 3],
+//  [3, 4, 8],
+//  [5, 6, 9]
+// ];
+
+// console.log('listaDeListas[0]', listaDeListas[2][2]);
+
+
+// // conforme o exemplo da listaSimples, faça a impressão da listaDeListas
+// for (let contador = 0; contador < listaDeListas.length; contador++) {
+
+//   for (let segCont = 0; segCont < listaDeListas[contador].length; segCont++) {
+//     console.log(listaDeListas[contador][segCont]);
+//   }
+
+// }
+
+
+// Exercício: Trabalhando com Matrizes em JavaScript
+// Crie um programa em JavaScript que trabalhe com uma matriz 3x3 de números inteiros.
+
+// Crie uma matriz 3x3 e preencha com números de sua escolha.
+// Mostre a matriz no console de forma organizada.
+// Calcule e mostre:
+// A soma de todos os elementos da matriz.
+// A soma dos elementos da diagonal principal.
+
+
+
+//LOOP DE REPETIÇÃO - PT.13 (objetos - JSON)
+const pessoa = {
+  nome: 'Leonardo',
+  idade: 17,
+  apelido: 'leo',
+  cpf: '000.111.222-34',
+  rg: '12.123.456-X',
+};
+
+const listaDePessoas = [pessoa];
+
+console.log(listaDePessoas.horariosDasConsultas);
+
+// adicione +2 pessoas nessa lista utilizando
+// a função "PUSH" ( listaDePessoas.push({}))
+
+listaDePessoas.push({
+  nome: 'Abinael',
+  idade: 62,
+  apelido: 'abi',
+  cpf: '000.111.222-34',
+  rg: '12.123.456-X',
+})
+
+listaDePessoas.push({
+  nome: 'traviscott',
+  idade: 16,
+  apelido: 'ts',
+  cpf: '000.111.222-34',
+  rg: '12.123.456-X',
+})
+
+console.log(listaDePessoas)
+
+//LOOP DE REPETIÇÃO - PT.14 (lista de objetos forEach)
+
+// for (let contador = 0; contador < listaDePessoas.length; contador++) {
+//   if (listaDePessoas[contador].idade > 18) {
+//     console.log('ele e maior: ', listaDePessoas[contador])
+//   }
+//   else {
+//     console.log('ele nao e maior', listaDePessoas[contador])
+//   }
+// }
+
+listaDePessoas.forEach((elemento, indice) => {
+  console.log('aqui est ao valor de banana: ', elemento, 'posicao: ', indice)
+})
+
+for (let contador = 0; contador < array.length; contador++) {
+  const element = array[contador];
+}
+
+// const novalista = [] // lista
+// const novoObjeto = {} // objeto
